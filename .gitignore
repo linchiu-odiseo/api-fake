@@ -1,0 +1,10 @@
+.env
+/src/vendor/
+/src/node_modules/
+/src/.env
+/src/storage/logs/*
+!/src/storage/logs/.gitkeep
+/src/storage/framework/cache/data/
+/src/storage/framework/sessions/
+/src/storage/framework/views/
+/src/bootstrap/cache/*.php

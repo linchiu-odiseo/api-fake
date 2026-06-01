@@ -1,0 +1,54 @@
+name: api-fake
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api_fake_app
+    ports:
+      - "${APP_PORT:-2004}:8000"
+    volumes:
+      - ./src:/var/www/html
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "true"
+      APP_URL: http://localhost:${APP_PORT:-2004}
+      DB_CONNECTION: pgsql
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: ${POSTGRES_DB:-apifake}
+      DB_USERNAME: ${POSTGRES_USER:-apifake}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-apifake}
+      API_KEY: ${API_KEY:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - api_fake_net
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: api_fake_postgres
+    ports:
+      - "${POSTGRES_PORT:-5435}:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-apifake}
+      POSTGRES_USER: ${POSTGRES_USER:-apifake}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-apifake}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-apifake} -d ${POSTGRES_DB:-apifake}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - api_fake_net
+
+volumes:
+  postgres_data:
+
+networks:
+  api_fake_net:
+    driver: bridge
