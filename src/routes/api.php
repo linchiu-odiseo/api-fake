@@ -10,6 +10,7 @@ Route::middleware('apikey')->group(function () {
     Route::get('/',                                  [StatusController::class, 'index']);
 
     Route::get('/sedes',                             [SedeController::class,   'index']);
+    Route::get('/ciclos',                            [CicloController::class,  'index']);
     Route::get('/ciclos/{ciclo_id}/aulas',           [CicloController::class,  'aulas']);
     Route::get('/aulas/{aula_id}/alumnos',           [AulaController::class,   'alumnos']);
     Route::get('/aulas/{aula_id}/tutores',           [AulaController::class,   'tutores']);

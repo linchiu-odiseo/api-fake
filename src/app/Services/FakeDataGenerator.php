@@ -9,16 +9,38 @@ use Illuminate\Http\Request;
  *
  * Estructura:
  *   SEDES                 -> lista plana de sedes
+ *   CICLOS                -> lista plana de ciclos (12)
  *   AULAS_BY_CICLO        -> mapa ciclo_id => [aulas...]
  *   ALUMNOS_BY_AULA       -> mapa aula_id  => [alumnos...]
  *   TUTORES_BY_AULA       -> mapa aula_id  => [tutores...]
  *
  * IDs validos hoy:
- *   ciclos: CIC-2025-1, CIC-2025-2
- *   aulas:  A2025-00001 .. A2025-00006
+ *   ciclos con aulas: CIC-2025-1, CIC-2025-2
+ *   aulas:            A2025-00001 .. A2025-00006
+ *   ciclos sin aulas: CIC-2023-1, CIC-2023-2, CIC-2024-1, CIC-2024-2,
+ *                     CIC-2024-VER, CIC-2025-INT, CIC-2026-VER,
+ *                     CIC-2026-1, CIC-2026-2, CIC-2026-ANU
  */
 class FakeDataGenerator
 {
+    // ----------------------------------------------------------------
+    // CICLOS (12) — 4 con "seleccion" en nombre (los -2 de cada anio)
+    // ----------------------------------------------------------------
+    private const CICLOS = [
+        ['ciclo_id' => 'CIC-2023-1',   'nombre' => 'Semestral 2023 - I',              'fecha_inicio' => '2023-03-01', 'fecha_fin' => '2023-07-31', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2023-2',   'nombre' => 'Semestral 2023 - II seleccion',   'fecha_inicio' => '2023-08-01', 'fecha_fin' => '2023-12-15', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2024-VER', 'nombre' => 'Verano 2024',                     'fecha_inicio' => '2024-01-08', 'fecha_fin' => '2024-02-29', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2024-1',   'nombre' => 'Semestral 2024 - I',              'fecha_inicio' => '2024-03-04', 'fecha_fin' => '2024-07-26', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2024-2',   'nombre' => 'Semestral 2024 - II seleccion',   'fecha_inicio' => '2024-08-05', 'fecha_fin' => '2024-12-13', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2025-INT', 'nombre' => 'Intensivo 2025',                  'fecha_inicio' => '2025-01-13', 'fecha_fin' => '2025-02-28', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2025-1',   'nombre' => 'Semestral 2025 - I',              'fecha_inicio' => '2025-03-03', 'fecha_fin' => '2025-07-25', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2025-2',   'nombre' => 'Semestral 2025 - II seleccion',   'fecha_inicio' => '2025-08-04', 'fecha_fin' => '2025-12-12', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2026-VER', 'nombre' => 'Verano 2026',                     'fecha_inicio' => '2026-01-12', 'fecha_fin' => '2026-02-27', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2026-1',   'nombre' => 'Semestral 2026 - I',              'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-07-24', 'estado' => 'activo'],
+        ['ciclo_id' => 'CIC-2026-2',   'nombre' => 'Semestral 2026 - II seleccion',   'fecha_inicio' => '2026-08-03', 'fecha_fin' => '2026-12-11', 'estado' => 'activo'],
+        ['ciclo_id' => 'CIC-2026-ANU', 'nombre' => 'Anual 2026',                      'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-12-11', 'estado' => 'activo'],
+    ];
+
     // ----------------------------------------------------------------
     // SEDES (10)
     // ----------------------------------------------------------------
@@ -222,6 +244,11 @@ class FakeDataGenerator
     public function sedes(): array
     {
         return self::SEDES;
+    }
+
+    public function ciclos(): array
+    {
+        return self::CICLOS;
     }
 
     /** Devuelve null si el ciclo no existe. */

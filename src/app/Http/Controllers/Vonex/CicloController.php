@@ -13,6 +13,11 @@ class CicloController extends Controller
     {
     }
 
+    public function index(Request $request): JsonResponse
+    {
+        return response()->json($this->fake->paginate($this->fake->ciclos(), $request));
+    }
+
     public function aulas(Request $request, string $ciclo_id): JsonResponse
     {
         $aulas = $this->fake->aulasForCiclo($ciclo_id);

@@ -28,7 +28,7 @@ midleware(token)
     GET /sedes/{sede_id}/tutores        → Tutores en una sede específica
 
     * ciclos
-    GET /ciclos                         → Lista todos los ciclos
+✅GET /ciclos                         → Lista todos los ciclos
     GET /ciclos/{ciclo_id}              → Detalle de un ciclo
     GET /ciclos/{ciclo_id}/alumnos      → Todos los alumnos de un ciclo
 ✅GET /ciclos/{ciclo_id}/aulas        → Todas las aulas de un ciclo
@@ -53,10 +53,11 @@ midleware(token)
 }
 ```
 
-2. en este entregable por el momento activar la 4 rutas necesarias
+2. en este entregable por el momento activar la 5 rutas necesarias
 
 ```json
 ✅GET /sedes                          → Lista todas las sedes 
+✅GET /ciclos                         → Lista todos los ciclos
 ✅GET /ciclos/{ciclo_id}/aulas        → Todas las aulas de un ciclo
 ✅GET /aulas/{aula_id}/alumnos        → Alumnos de una aula específica
 ✅GET /aulas/{aula_id}/tutores        → tutores de una aula específica
@@ -154,3 +155,27 @@ Paginado (puede traer 90+).
   }
 
 ```
+
+### Endpoint 5 — GET /ciclos
+Paginado por defensividad (aunque normalmente sean <20). Lista todos los ciclos del tenant.
+```json
+  {
+    "data": [
+      {
+        "ciclo_id": "CIC-2025-2",                   // ciclo_id      ->varchar(20)
+        "nombre": "Semestral 2025 - seleccion",     // nombre        ->varchar(80)
+        "fecha_inicio": "2026-05-01",               // fecha_inicio  ->date ISO 8601 (YYYY-MM-DD)
+        "fecha_fin": "2026-07-31",                  // fecha_fin     ->date ISO 8601 (YYYY-MM-DD)
+        "estado": "activo"                          // estado        ->string (activo, cerrado)
+      }
+    ],
+    "pagination": {
+      "current_page": 1,
+      "per_page": 50,
+      "total": 2,
+      "total_pages": 1,
+      "has_more": false
+    }
+  }
+```
+
