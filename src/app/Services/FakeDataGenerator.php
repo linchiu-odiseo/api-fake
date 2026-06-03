@@ -26,7 +26,7 @@ class FakeDataGenerator
     // ----------------------------------------------------------------
     // CICLOS (12) — 4 con "seleccion" en nombre (los -2 de cada anio)
     // ----------------------------------------------------------------
-    private const CICLOS = [
+    private const CICLOS2 = [
         ['ciclo_id' => 'CIC-2023-1',   'nombre' => 'Semestral 2023 - I',              'fecha_inicio' => '2023-03-01', 'fecha_fin' => '2023-07-31', 'estado' => 'cerrado'],
         ['ciclo_id' => 'CIC-2023-2',   'nombre' => 'Semestral 2023 - II seleccion',   'fecha_inicio' => '2023-08-01', 'fecha_fin' => '2023-12-15', 'estado' => 'cerrado'],
         ['ciclo_id' => 'CIC-2024-VER', 'nombre' => 'Verano 2024',                     'fecha_inicio' => '2024-01-08', 'fecha_fin' => '2024-02-29', 'estado' => 'cerrado'],
@@ -39,6 +39,11 @@ class FakeDataGenerator
         ['ciclo_id' => 'CIC-2026-1',   'nombre' => 'Semestral 2026 - I',              'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-07-24', 'estado' => 'activo'],
         ['ciclo_id' => 'CIC-2026-2',   'nombre' => 'Semestral 2026 - II seleccion',   'fecha_inicio' => '2026-08-03', 'fecha_fin' => '2026-12-11', 'estado' => 'activo'],
         ['ciclo_id' => 'CIC-2026-ANU', 'nombre' => 'Anual 2026',                      'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-12-11', 'estado' => 'activo'],
+    ];
+
+    private const CICLOS = [
+        ['ciclo_id' => 'CIC-2025-1',   'nombre' => 'Semestral 2025 - I',              'fecha_inicio' => '2025-03-03', 'fecha_fin' => '2025-07-25', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2025-2',   'nombre' => 'Semestral 2025 - II seleccion',   'fecha_inicio' => '2025-08-04', 'fecha_fin' => '2025-12-12', 'estado' => 'cerrado'],
     ];
 
     // ----------------------------------------------------------------
@@ -248,7 +253,34 @@ class FakeDataGenerator
 
     public function ciclos(): array
     {
-        return self::CICLOS;
+        // 100 ciclos (2 reales + 98 sinteticos):
+        return $this->ciclos100();
+
+        // 12 ciclos reales:
+        // return self::CICLOS2;
+    }
+
+    /**
+     * Devuelve 100 ciclos: los 2 reales con aulas (self::CICLOS) + 98 sinteticos.
+     * Los sinteticos cubren anios 2015..2024 para no chocar con los IDs reales.
+     */
+    private function ciclos100(): array
+    {
+        $filler = [];
+        for ($i = 1; $i <= 98; $i++) {
+            $num  = str_pad((string) $i, 3, '0', STR_PAD_LEFT);
+            $year = 2015 + intdiv($i - 1, 10);
+
+            $filler[] = [
+                'ciclo_id'     => "CIC-SYN-{$num}",
+                'nombre'       => "Ciclo Sintetico {$num} ({$year})",
+                'fecha_inicio' => "{$year}-03-01",
+                'fecha_fin'    => "{$year}-12-15",
+                'estado'       => 'cerrado',
+            ];
+        }
+
+        return array_merge(self::CICLOS, $filler);
     }
 
     /** Devuelve null si el ciclo no existe. */
