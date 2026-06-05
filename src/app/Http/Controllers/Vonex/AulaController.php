@@ -36,6 +36,7 @@ class AulaController extends Controller
             ], 404);
         }
 
-        return response()->json($this->fake->paginate($tutores, $request));
+        // Vonex real NO envuelve tutores en paginacion (son <10 por aula).
+        return response()->json(['data' => $tutores]);
     }
 }

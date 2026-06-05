@@ -14,7 +14,8 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-            'apikey' => \App\Http\Middleware\EnsureApiKey::class,
+            'apikey'      => \App\Http\Middleware\EnsureApiKey::class,
+            'apikey.path' => \App\Http\Middleware\EnsureTokenInPath::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

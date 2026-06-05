@@ -27,39 +27,40 @@ class FakeDataGenerator
     // CICLOS (12) — 4 con "seleccion" en nombre (los -2 de cada anio)
     // ----------------------------------------------------------------
     private const CICLOS2 = [
-        ['ciclo_id' => 'CIC-2023-1',   'nombre' => 'Semestral 2023 - I',              'fecha_inicio' => '2023-03-01', 'fecha_fin' => '2023-07-31', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2023-2',   'nombre' => 'Semestral 2023 - II seleccion',   'fecha_inicio' => '2023-08-01', 'fecha_fin' => '2023-12-15', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2024-VER', 'nombre' => 'Verano 2024',                     'fecha_inicio' => '2024-01-08', 'fecha_fin' => '2024-02-29', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2024-1',   'nombre' => 'Semestral 2024 - I',              'fecha_inicio' => '2024-03-04', 'fecha_fin' => '2024-07-26', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2024-2',   'nombre' => 'Semestral 2024 - II seleccion',   'fecha_inicio' => '2024-08-05', 'fecha_fin' => '2024-12-13', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2025-INT', 'nombre' => 'Intensivo 2025',                  'fecha_inicio' => '2025-01-13', 'fecha_fin' => '2025-02-28', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2025-1',   'nombre' => 'Semestral 2025 - I',              'fecha_inicio' => '2025-03-03', 'fecha_fin' => '2025-07-25', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2025-2',   'nombre' => 'Semestral 2025 - II seleccion',   'fecha_inicio' => '2025-08-04', 'fecha_fin' => '2025-12-12', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2026-VER', 'nombre' => 'Verano 2026',                     'fecha_inicio' => '2026-01-12', 'fecha_fin' => '2026-02-27', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2026-1',   'nombre' => 'Semestral 2026 - I',              'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-07-24', 'estado' => 'activo'],
-        ['ciclo_id' => 'CIC-2026-2',   'nombre' => 'Semestral 2026 - II seleccion',   'fecha_inicio' => '2026-08-03', 'fecha_fin' => '2026-12-11', 'estado' => 'activo'],
-        ['ciclo_id' => 'CIC-2026-ANU', 'nombre' => 'Anual 2026',                      'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-12-11', 'estado' => 'activo'],
+        ['ciclo_id' => 'CIC-2023-1',   'nombre' => 'Semestral 2023 - I',              'fecha_inicio' => '2023-03-01', 'fecha_fin' => '2023-07-31', 'activo' => false],
+        ['ciclo_id' => 'CIC-2023-2',   'nombre' => 'Semestral 2023 - II seleccion',   'fecha_inicio' => '2023-08-01', 'fecha_fin' => '2023-12-15', 'activo' => false],
+        ['ciclo_id' => 'CIC-2024-VER', 'nombre' => 'Verano 2024',                     'fecha_inicio' => '2024-01-08', 'fecha_fin' => '2024-02-29', 'activo' => false],
+        ['ciclo_id' => 'CIC-2024-1',   'nombre' => 'Semestral 2024 - I',              'fecha_inicio' => '2024-03-04', 'fecha_fin' => '2024-07-26', 'activo' => false],
+        ['ciclo_id' => 'CIC-2024-2',   'nombre' => 'Semestral 2024 - II seleccion',   'fecha_inicio' => '2024-08-05', 'fecha_fin' => '2024-12-13', 'activo' => false],
+        ['ciclo_id' => 'CIC-2025-INT', 'nombre' => 'Intensivo 2025',                  'fecha_inicio' => '2025-01-13', 'fecha_fin' => '2025-02-28', 'activo' => false],
+        ['ciclo_id' => 'CIC-2025-1',   'nombre' => 'Semestral 2025 - I',              'fecha_inicio' => '2025-03-03', 'fecha_fin' => '2025-07-25', 'activo' => false],
+        ['ciclo_id' => 'CIC-2025-2',   'nombre' => 'Semestral 2025 - II seleccion',   'fecha_inicio' => '2025-08-04', 'fecha_fin' => '2025-12-12', 'activo' => false],
+        ['ciclo_id' => 'CIC-2026-VER', 'nombre' => 'Verano 2026',                     'fecha_inicio' => '2026-01-12', 'fecha_fin' => '2026-02-27', 'activo' => false],
+        ['ciclo_id' => 'CIC-2026-1',   'nombre' => 'Semestral 2026 - I',              'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-07-24', 'activo' => true],
+        ['ciclo_id' => 'CIC-2026-2',   'nombre' => 'Semestral 2026 - II seleccion',   'fecha_inicio' => '2026-08-03', 'fecha_fin' => '2026-12-11', 'activo' => true],
+        ['ciclo_id' => 'CIC-2026-ANU', 'nombre' => 'Anual 2026',                      'fecha_inicio' => '2026-03-02', 'fecha_fin' => '2026-12-11', 'activo' => true],
     ];
 
     private const CICLOS = [
-        ['ciclo_id' => 'CIC-2025-1',   'nombre' => 'Semestral 2025 - I',              'fecha_inicio' => '2025-03-03', 'fecha_fin' => '2025-07-25', 'estado' => 'cerrado'],
-        ['ciclo_id' => 'CIC-2025-2',   'nombre' => 'Semestral 2025 - II seleccion',   'fecha_inicio' => '2025-08-04', 'fecha_fin' => '2025-12-12', 'estado' => 'cerrado'],
+        ['ciclo_id' => 'CIC-2025-1',   'nombre' => 'Semestral 2025 - I',              'fecha_inicio' => '2025-03-03', 'fecha_fin' => '2025-07-25', 'activo' => false],
+        ['ciclo_id' => 'CIC-2025-2',   'nombre' => 'Semestral 2025 - II seleccion',   'fecha_inicio' => '2025-08-04', 'fecha_fin' => '2025-12-12', 'activo' => false],
     ];
 
     // ----------------------------------------------------------------
     // SEDES (10)
     // ----------------------------------------------------------------
+    // 'activo' aqui es INT (1/0), no bool — unico endpoint donde es numerico.
     private const SEDES = [
-        ['sede_id' => 'SEDE-LIMA', 'nombre' => 'Sede Lima Centro',  'ciudad' => 'Lima'],
-        ['sede_id' => 'SEDE-AREQ', 'nombre' => 'Sede Arequipa',     'ciudad' => 'Arequipa'],
-        ['sede_id' => 'SEDE-TRUJ', 'nombre' => 'Sede Trujillo',     'ciudad' => 'Trujillo'],
-        ['sede_id' => 'SEDE-CUSC', 'nombre' => 'Sede Cusco',        'ciudad' => 'Cusco'],
-        ['sede_id' => 'SEDE-PIUR', 'nombre' => 'Sede Piura',        'ciudad' => 'Piura'],
-        ['sede_id' => 'SEDE-CHIC', 'nombre' => 'Sede Chiclayo',     'ciudad' => 'Chiclayo'],
-        ['sede_id' => 'SEDE-ICA',  'nombre' => 'Sede Ica',          'ciudad' => 'Ica'],
-        ['sede_id' => 'SEDE-TACN', 'nombre' => 'Sede Tacna',        'ciudad' => 'Tacna'],
-        ['sede_id' => 'SEDE-HUAN', 'nombre' => 'Sede Huancayo',     'ciudad' => 'Huancayo'],
-        ['sede_id' => 'SEDE-PUNO', 'nombre' => 'Sede Puno',         'ciudad' => 'Puno'],
+        ['sede_id' => 'SEDE-LIMA', 'nombre' => 'Sede Lima Centro',  'ciudad' => 'Lima',     'activo' => 1],
+        ['sede_id' => 'SEDE-AREQ', 'nombre' => 'Sede Arequipa',     'ciudad' => 'Arequipa', 'activo' => 1],
+        ['sede_id' => 'SEDE-TRUJ', 'nombre' => 'Sede Trujillo',     'ciudad' => 'Trujillo', 'activo' => 1],
+        ['sede_id' => 'SEDE-CUSC', 'nombre' => 'Sede Cusco',        'ciudad' => 'Cusco',    'activo' => 1],
+        ['sede_id' => 'SEDE-PIUR', 'nombre' => 'Sede Piura',        'ciudad' => 'Piura',    'activo' => 1],
+        ['sede_id' => 'SEDE-CHIC', 'nombre' => 'Sede Chiclayo',     'ciudad' => 'Chiclayo', 'activo' => 1],
+        ['sede_id' => 'SEDE-ICA',  'nombre' => 'Sede Ica',          'ciudad' => 'Ica',      'activo' => 1],
+        ['sede_id' => 'SEDE-TACN', 'nombre' => 'Sede Tacna',        'ciudad' => 'Tacna',    'activo' => 1],
+        ['sede_id' => 'SEDE-HUAN', 'nombre' => 'Sede Huancayo',     'ciudad' => 'Huancayo', 'activo' => 1],
+        ['sede_id' => 'SEDE-PUNO', 'nombre' => 'Sede Puno',         'ciudad' => 'Puno',     'activo' => 1],
     ];
 
     // ----------------------------------------------------------------
@@ -276,7 +277,7 @@ class FakeDataGenerator
                 'nombre'       => "Ciclo Sintetico {$num} ({$year})",
                 'fecha_inicio' => "{$year}-03-01",
                 'fecha_fin'    => "{$year}-12-15",
-                'estado'       => 'cerrado',
+                'activo'       => false,
             ];
         }
 
