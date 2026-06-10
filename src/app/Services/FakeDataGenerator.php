@@ -258,7 +258,7 @@ class FakeDataGenerator
         return $this->ciclos100();
 
         // 12 ciclos reales:
-        // return self::CICLOS2;
+        //return self::CICLOS2;
     }
 
     /**
