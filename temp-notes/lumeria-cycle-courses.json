@@ -1,0 +1,27 @@
+{
+  "cycle_id": "1",
+  "name": "SEMIANUAL UNMSM-MAYO 2026",
+  "courses":
+  [
+    { "course_id": "1",  "code": "01", "name": "ARITMÉTICA",             "subject_area_code": "03" },
+    { "course_id": "2",  "code": "02", "name": "ÁLGEBRA",                "subject_area_code": "03" },
+    { "course_id": "3",  "code": "03", "name": "GEOMETRÍA",              "subject_area_code": "03" },
+    { "course_id": "4",  "code": "04", "name": "TRIGONOMETRÍA",          "subject_area_code": "03" },
+    { "course_id": "5",  "code": "05", "name": "RAZONAMIENTO MATEMÁTICO","subject_area_code": "03" },
+    { "course_id": "6",  "code": "06", "name": "FÍSICA",                 "subject_area_code": "02" },
+    { "course_id": "7",  "code": "07", "name": "QUÍMICA",                "subject_area_code": "02" },
+    { "course_id": "8",  "code": "08", "name": "BIOLOGÍA",               "subject_area_code": "02" },
+    { "course_id": "9",  "code": "09", "name": "ANATOMÍA",               "subject_area_code": "02" },
+    { "course_id": "10", "code": "10", "name": "LENGUAJE",               "subject_area_code": "01" },
+    { "course_id": "11", "code": "11", "name": "LITERATURA",             "subject_area_code": "01" },
+    { "course_id": "12", "code": "12", "name": "RAZONAMIENTO VERBAL",    "subject_area_code": "01" },
+    { "course_id": "13", "code": "13", "name": "HISTORIA UNIVERSAL",     "subject_area_code": "04" },
+    { "course_id": "14", "code": "14", "name": "HISTORIA DEL PERÚ",      "subject_area_code": "04" },
+    { "course_id": "15", "code": "15", "name": "GEOGRAFÍA",              "subject_area_code": "04" },
+    { "course_id": "16", "code": "16", "name": "ECONOMÍA",               "subject_area_code": "04" },
+    { "course_id": "17", "code": "17", "name": "FILOSOFÍA",              "subject_area_code": "04" },
+    { "course_id": "18", "code": "18", "name": "PSICOLOGÍA",             "subject_area_code": "04" },
+    { "course_id": "19", "code": "19", "name": "CÍVICA",                 "subject_area_code": "04" },
+    { "course_id": "20", "code": "20", "name": "INGLÉS",                 "subject_area_code": "01" }
+  ]
+}

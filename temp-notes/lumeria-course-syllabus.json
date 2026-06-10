@@ -1,0 +1,229 @@
+{
+  "topics": [
+    {
+      "topic_id": "51953",
+      "code": null,
+      "name": "ÁNGULO TRIGONOMÉTRICO",
+      "subtopics": [
+        {"id":"900","code":"02","name":"SISTEMAS DE MEDICIÓN ANGULAR","weeks":[5]},
+        {"id":"901","code":"03","name":"SISTEMA SEXAGESIMAL (SISTEMA INGLÉS): GRADOS, MINUTOS Y SEGUNDOS","weeks":[5]},
+        {"id":"902","code":"04","name":"SISTEMA CENTESIMAL (SISTEMA FRANCES): GRADOS, MINUTOS Y SEGUNDOS","weeks":[5]},
+        {"id":"904","code":"06","name":"SISTEMA RADIAL (SISTEMA CIRCULAR O INTERNACIONAL)","weeks":[5]},
+        {"id":"905","code":"07","name":"EQUIVALENCIAS ENTRE LAS UNIDADES DE LOS SISTEMAS DE MEDICIÓN ANGULAR","weeks":[5]},
+        {"id":"906","code":"08","name":"FÓRMULA GENERAL DE CONVERSIÓN ENTRE LOS TRES SISTEMAS (S, C Y R)","weeks":[5]}
+      ]
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "SECTOR CIRCULAR",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "APLICACIONES DE LONGITUD DE ARCO: RUEDAS, DISCOS, ENGRANAJES, POLEAS, ETC.",
+      "subtopics": []
+    },
+    {
+      "topic_id": "51956",
+      "code": null,
+      "name": "RAZONES TRIGONOMÉTRICAS DE ÁNGULOS AGUDOS",
+      "subtopics": [
+        {"id":"925","code":"01","name":"DEFINICIÓN DE LAS RAZONES TRIGONOMÉTRICAS EN UN TRIÁNGULO RECTÁNGULO","weeks":[3,6,9]},
+        {"id":"926","code":"03","name":"NOT 1 (NO USAR)","weeks":[3,6,9]},
+        {"id":"928","code":"12","name":"RAZONES TRIGONOMÉTRICAS RECÍPROCAS","weeks":[6]},
+        {"id":"929","code":"13","name":"RAZONES TRIGONOMÉTRICAS DE ÁNGULOS COMPLEMENTARIOS","weeks":[6]},
+        {"id":"930","code":"14","name":"RESOLUCIÓN DE TRIÁNGULOS RECTÁNGULOS","weeks":[7,9]},
+        {"id":"931","code":"15","name":"CÁLCULO DEL ÁREA DE UNA REGIÓN TRIANGULAR (FORMA TRIGONOMÉTRICA) Y SU APLICACIÓN AL CÁLCULO DEL SENO O COSECANTE","weeks":[7]},
+        {"id":"932","code":"16","name":"APLICACIONES EN ÁNGULOS VERTICALES: ÁNGULOS DE ELEVACIÓN Y DEPRESIÓN","weeks":[7,9]}
+      ]
+    },
+    {
+      "topic_id": "51957",
+      "code": null,
+      "name": "INTRODUCCIÓN A LA GEOMETRÍA ANALÍTICA",
+      "subtopics": [
+        {"id":"933","code":"01","name":"SISTEMA DE COORDENADAS RECTANGULARES. EL PLANO CARTESIANO Y SUS ELEMENTOS PRINCIPALES","weeks":[1]},
+        {"id":"934","code":"02","name":"UBICACIÓN DE UN PUNTO EN EL PLANO CARTESIANO","weeks":[1]},
+        {"id":"935","code":"03","name":"DISTANCIA ENTRE DOS PUNTOS COPLANARES","weeks":[1]},
+        {"id":"937","code":"05","name":"COORDENADAS DEL PUNTO MEDIO DE UN SEGMENTO","weeks":[1]}
+      ]
+    },
+    {
+      "topic_id": "51958",
+      "code": null,
+      "name": "LA RECTA EN EL PLANO Y SUS ECUACIONES",
+      "subtopics": [
+        {"id":"943","code":"01","name":"DEFINICIÓN DE LA RECTA.","weeks":[2]},
+        {"id":"944","code":"02","name":"ÁNGULO DE INCLINACIÓN.","weeks":[2]},
+        {"id":"945","code":"03","name":"PENDIENTE DE UNA RECTA.","weeks":[2]},
+        {"id":"946","code":"04","name":"ECUACIÓN CONOCIENDO SU PENDIENTE Y UN PUNTO DE PASO","weeks":[2]},
+        {"id":"947","code":"05","name":"ECUACIÓN CONOCIENDO DOS PUNTOS DE PASO","weeks":[2]}
+      ]
+    },
+    {
+      "topic_id": "51959",
+      "code": null,
+      "name": "RAZONES TRIGONOMÉTRICAS DE ÁNGULOS DE CUALQUIER MAGNITUD.",
+      "subtopics": [
+        {"id":"954","code":"01","name":"DEFINICIÓN DE ÁNGULOS EN POSICIÓN NORMAL, ESTÁNDAR O CANÓNICA.","weeks":[8]},
+        {"id":"955","code":"02","name":"DEFINICIÓN DE RAZONES TRIGONOMÉTRICAS DE UN ÁNGULO EN POSICIÓN NORMAL.","weeks":[8,9]},
+        {"id":"956","code":"04","name":"SIGNO DE LAS RAZONES TRIGONOMÉTRICAS EN LOS CUATRO CUADRANTES","weeks":[8,9]},
+        {"id":"957","code":"05","name":"ÁNGULOS COTERMINALES Y SUS PROPIEDADES","weeks":[8]},
+        {"id":"958","code":"06","name":"ÁNGULOS CUADRANTALES Y SUS RT","weeks":[8,9]},
+        {"id":"959","code":"07","name":"RAZONES TRIGONOMÉTRICAS DE ÁNGULOS NEGATIVOS","weeks":[9]}
+      ]
+    },
+    {
+      "topic_id": "51960",
+      "code": null,
+      "name": "LA CIRCUNFERENCIA TRIGONOMÉTRICA (C.T.)",
+      "subtopics": [
+        {"id":"960","code":"01","name":"DEFINICIÓN DE LA CIRCUNFERENCIA TRIGONOMÉTRICA","weeks":[11]},
+        {"id":"961","code":"02","name":"DEFINICIÓN DE LA LÍNEA SENO:  ANÁLISIS DE LA VARIACIÓN NUMÉRICA DE EN LOS CUATRO CUADRANTES","weeks":[11,13]},
+        {"id":"962","code":"03","name":"DEFINICIÓN DE LA LÍNEA COSENO:  ANÁLISIS DE LA VARIACIÓN NUMÉRICA DE EN LOS CUATRO CUADRANTES","weeks":[11,13]},
+        {"id":"963","code":"04","name":"COORDENADAS DEL EXTREMO DE UN ARCO, EN LA CIRCUNFERENCIA TRIGONOMÉTRICA, EN FUNCIÓN DE LAS LÍNEAS SENO Y COSENO.","weeks":[11]},
+        {"id":"968","code":"09","name":"CÁLCULO DE PERÍMETROS Y ÁREAS DE REGIONES POLIGONALES EN TÉRMINOS DE LA LONGITUD DE LAS LÍNEAS TRIGONOMÉTRICAS. SEN, COS O TAN","weeks":[11,13]}
+      ]
+    },
+    {
+      "topic_id": "51961",
+      "code": null,
+      "name": "REGLAS DE REDUCCIÓN DE ARCOS AL PRIMER CUADRANTE",
+      "subtopics": [
+        {"id":"970","code":"01","name":"REDUCCIÓN DE ARCOS POSITIVOS Y MENORES DE UNA VUELTA AL PRIMER CUADRANTE","weeks":[10,13]},
+        {"id":"971","code":"02","name":"REDUCCIÓN DE ARCOS POSITIVOS Y MAYORES DE UNA VUELTA AL PRIMER CUADRANTE","weeks":[10,13]},
+        {"id":"972","code":"03","name":"REDUCCIÓN DE ARCOS NEGATIVOS AL PRIMER CUADRANTE.","weeks":[10,13]},
+        {"id":"973","code":"04","name":"RELACIÓN ENTRE LAS RAZONES TRIGONOMÉTRICAS DE ÁNGULOS SUPLEMENTARIOS","weeks":[10]},
+        {"id":"976","code":"07","name":"APLICACIONES DE LAS REGLAS DE REDUCCIÓN AL PRIMER CUADRANTE AL CÁLCULO DE LAS RT DE ÁNGULOS QUE NO ESTÁN EN PN","weeks":[10]}
+      ]
+    },
+    {
+      "topic_id": "51962",
+      "code": null,
+      "name": "IDENTIDADES TRIGONOMÉTRICAS I",
+      "subtopics": [
+        {"id":"977","code":"01","name":"DEFINICIÓN DE UNA IDENTIDAD TRIGONOMÉTRICA","weeks":[4,12]},
+        {"id":"978","code":"02","name":"CLASIFICACIÓN DE LAS IDENTIDADES TRIGONOMÉTRICAS DE UN ARCO SIMPLE: POR COCIENTE","weeks":[4,12,13]},
+        {"id":"979","code":"04","name":"IDENTIDADES AUXILIARES DE ARCO SIMPLE.","weeks":[12,13]},
+        {"id":"980","code":"05","name":"IDENTIDADES CON ARCOS COMPUESTOS: ADICIÓN Y SUSTRACCIÓN DE DOS ARCOS","weeks":[14]},
+        {"id":"981","code":"06","name":"IDENTIDADES AUXILIARES PARA DOS ARCOS","weeks":[14]},
+        {"id":"982","code":"07","name":"PROPIEDADES PARA TRES ARCOS RELACIONADOS","weeks":[14]},
+        {"id":"983","code":"08","name":"IDENTIDADES TRIGONOMÉTRICAS CON ARCO DOBLE","weeks":[15]},
+        {"id":"984","code":"09","name":"FÓRMULAS DE DEGRADACIÓN DEL SENO O COSENO EN EL ARCO DOBLE","weeks":[15]},
+        {"id":"985","code":"10","name":"IDENTIDADES AUXILIARES DEL ARCO DOBLE","weeks":[15]},
+        {"id":"986","code":"11","name":"IDENTIDADES TRIGONOMÉTRICAS CON ARCO MITAD","weeks":[15]}
+      ]
+    },
+    {
+      "topic_id": "51963",
+      "code": null,
+      "name": "IDENTIDADES TRIGONOMÉTRICAS II",
+      "subtopics": [
+        {"id":"988","code":"01","name":"IDENTIDADES TRIGONOMÉTRICAS CON ARCO TRIPLE","weeks":[16]},
+        {"id":"991","code":"04","name":"IDENTIDADES TRIGONOMÉTRICAS QUE TRANSFORMAN SUMAS ALGEBRAICAS DE SENOS Y/O COSENOS A PRODUCTOS.","weeks":[16]},
+        {"id":"993","code":"06","name":"IDENTIDADES TRIGONOMÉTRICAS QUE TRANSFORMAN PRODUCTOS DE SENOS Y/O COSENOS A SUMAS ALGEBRAICAS.","weeks":[16]}
+      ]
+    },
+    {
+      "topic_id": "51964",
+      "code": null,
+      "name": "FUNCIONES TRIGONOMÉTRICAS Y SUS GRÁFICAS.",
+      "subtopics": [
+        {"id":"996","code":"01","name":"DEFINICIÓN DE FUNCIÓN TRIGONOMÉTRICA DIRECTA","weeks":[19]},
+        {"id":"997","code":"02","name":"ESTUDIO ANALÍTICO DE LA FUNCIÓN SENO: DOMINIO, RANGO, PERIODO, GRÁFICA, SIMETRÍA, CONTINUIDAD Y MONOTONIA.","weeks":[19]},
+        {"id":"998","code":"03","name":"ESTUDIO ANALÍTICO DE LA FUNCIÓN COSENO: DOMINIO, RANGO, PERIODO, GRÁFICA, SIMETRÍA, CONTINUIDAD Y MONOTONIA","weeks":[19]},
+        {"id":"1003","code":"08","name":"DEFINICIÓN DEL PERIODO DE UNA FUNCIÓN TRIGONOMÉTRICA Y SU APLICACIÓN EN LA DETERMINACIÓN DEL PERÍODO MÍNIMO.","weeks":[19]},
+        {"id":"1004","code":"09","name":"GRÁFICAS DE FUNCIONES TRIGONOMÉTRICAS GENERALIZADAS: F(X) = A. FT (BX + C) + D PARA EL SENO, COSENO Y TANGENTE","weeks":[19]}
+      ]
+    },
+    {
+      "topic_id": "51965",
+      "code": null,
+      "name": "FUNCIONES TRIGONOMÉTRICAS INVERSAS Y SUS GRÁFICAS",
+      "subtopics": [
+        {"id":"1007","code":"01","name":"DEFINICIÓN DE FUNCIÓN TRIGONOMÉTRICA INVERSA","weeks":[20]},
+        {"id":"1009","code":"03","name":"FUNCIÓN ARCO SENO: DETERMINACIÓN DE SU DOMINIO, RANGO, CONTINUIDAD, GRÁFICA Y MONOTONÍA","weeks":[20]},
+        {"id":"1010","code":"04","name":"FUNCIÓN ARCO COSENO: DETERMINACIÓN DE SU DOMINIO, RANGO, CONTINUIDAD, GRÁFICA Y MONOTONÍA","weeks":[20]},
+        {"id":"1016","code":"11","name":"PROPIEDADES DE LAS FUNCIONES TRIGONOMÉTRICAS INVERSAS: PROPIEDAD FUNDAMENTAL","weeks":[20]}
+      ]
+    },
+    {
+      "topic_id": "51966",
+      "code": null,
+      "name": "ECUACIONES  E INECUACIONES TRIGONOMÉTRICAS",
+      "subtopics": [
+        {"id":"1017","code":"01","name":"DEFINICIÓN. ECUACIÓN TRIGONOMÉTRICA","weeks":[17]},
+        {"id":"1018","code":"02","name":"CONJUNTO SOLUCIÓN, SOLUCIÓN GENERAL Y SOLUCIÓN PARTICULAR","weeks":[17]},
+        {"id":"1019","code":"03","name":"ECUACIONES TRIGONOMÉTRICAS ELEMENTALES CON UNA INCOGNITA","weeks":[17]},
+        {"id":"1023","code":"08","name":"ECUACIONES TRIGONOMÉTRICAS NO ELEMENTALES","weeks":[17]}
+      ]
+    },
+    {
+      "topic_id": "51967",
+      "code": null,
+      "name": "RESOLUCIÓN DE TRIANGULOS I",
+      "subtopics": [
+        {"id":"1028","code":"01","name":"TEOREMA DE SENOS","weeks":[18]},
+        {"id":"1029","code":"02","name":"TEOREMA DE COSENOS","weeks":[18]},
+        {"id":"1030","code":"03","name":"TEOREMA DE TANGENTES","weeks":[18]},
+        {"id":"1031","code":"04","name":"TEOREMA DE PROYECCIONES","weeks":[18]}
+      ]
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "RESOLUCIÓN DE TRIANGULOS II",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "CUADRILÁTEROS",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "LA CIRCUNFERENCIA",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "LA PARÁBOLA",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "LA ELIPSE",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "LA HIPÉRBOLA",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "TRANSFORMACIÓN DE COORDENADAS",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "COORDENADAS POLARES",
+      "subtopics": []
+    },
+    {
+      "topic_id": null,
+      "code": null,
+      "name": "NÚMEROS COMPLEJOS",
+      "subtopics": []
+    }
+  ]
+}
