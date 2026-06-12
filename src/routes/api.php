@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Lumeria\SyllabusController as LumeriaSyllabusController;
 use App\Http\Controllers\NeonPanda\AuthController;
+use App\Http\Controllers\NeonPanda\SimulacroController;
 use App\Http\Controllers\Vonex\AulaController;
 use App\Http\Controllers\Vonex\CicloController;
 use App\Http\Controllers\Vonex\SedeController;
@@ -41,6 +42,10 @@ Route::middleware('apikey')->group(function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('/auth/logout', [AuthController::class, 'logout']);
         Route::get('/auth/me', [AuthController::class, 'me']);
+
+        // Simulacros (Fase 2).
+        Route::get('/simulacros', [SimulacroController::class, 'index']);
+        Route::post('/simulacros/{simulacroId}/envio', [SimulacroController::class, 'envio']);
     });
 });
 
