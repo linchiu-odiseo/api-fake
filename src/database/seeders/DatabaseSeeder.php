@@ -3,21 +3,23 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Usuario fake para login del PWA NeonPanda.
+     * Contrato: temp-notes/api-contract-request.md
+     * El cast 'hashed' del modelo User hashea el password al guardar.
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        User::updateOrCreate(
+            ['email' => 'fulano@panda.test'],
+            [
+                'name'     => 'fulano Demo',
+                'password' => '12345678',
+            ],
+        );
     }
 }
